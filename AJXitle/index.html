@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <script defer src="./main.js"></script>
+    <title>Mi primera pagina Web</title>
+</head>
+<body>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 logo text-center">
+                <img src="xnlogo.png" alt="logo" />
+                </div>
+                <nav class="col-md-8">
+                <ul>
+                    
+                    <a href=""><li>Ciencia</li></a>
+                    <a href=""><li>Tec</li></a>
+                    <a href=""><li>Ambiente</li></a>
+                </ul>
+            </nav>
+            </div>          
+
+    </header>
+<!--carrusel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="c1.png" class="d-block w-100" width="1024px" height="550px" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="c2.png" class="d-block w-100" width="1024px" height="550px"  alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="c3.png" class="d-block w-100" width="1024px" height="550px"  alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>    
+
+    <div class="container-fluid bg-info"></div>
+<!--quienes Somos-->
+    <div class="presentacion" class="container-fluid">
+        <h1>QUÉ ES XITLE NOTICIAS</h1>
+        <p>Es un proyecto independiente de periodismo de ciencia, tecnología y medio ambiente</p>
+    </div>
+
+<!--info+imagenes con borde circular-->
+    <div class="cajas">
+    <div class="row justify-content-center">
+        <div class="caja col-md-4 p-4 d-flex flex-column justify-content-center align-items-center"> 
+            <img src="vector1.png" alt="adn">
+            <h1>Quiénes somos</h1>
+            <p>Somos periodistas jóvenes mexicanos</p>
+        </div>
+
+        <div class="caja col-md-4 p-4 d-flex flex-column justify-content-center align-items-center">            
+            <img src="vector2.png" alt="fis">
+            <h1>Desde 2023</h1>
+            <p>Nace el proyecto en julio de 2023 </p>  
+        </div>
+        <div class="caja col-md-4 p-4 d-flex flex-column justify-content-center align-items-center">            
+            <img src="vector3.png" alt="Quim">
+            <h1>LATAM</h1>
+            <p>Apasionados en contar hsitorias de América Latina</p>
+        </div>   
+    </div>
+    </div>
+<!--más info-->
+    <div class="container-fluid">
+    <div class="row" class="caja">
+                <div class="col-6 bg-primary">
+                    <h1>Nuestra Misión</h1>
+                    <p>En Xitle Noticias creemos firmemente que el periodismo científico tiene que ser accesible a todas las personas</p>
+                </div>
+                <div class="col-6 bg-primary">
+                    <h1>¿Por qué lo hacemos?</h1>
+                    <p>Fomentar la cultura científica es la base de una sociedad más democrática y libre</p>
+                </div>
+                </div>
+    </div>
+    </div>
+<!--noticias -->
+    <div>
+        <h1>Últimas noticias</h1>
+    </div>
+    <div class="container-fluid">
+    <div class="noticias">
+        <div class="row">
+            <!--noticia1-->
+            <div class="rows-cols-md-6 col-12 col-sm-12 col-lg-4 noticias">
+                <h1>El 18 de julio 24 organizaciones denunciaron un derrame petrolero en el Golfo de México</h1>
+            <div id="contenido" >
+            <!--ocultar/mostrar -->
+                <p> Gracias a las imágenes satelitales procesadas por el geógrafo Guillermo Tamburini se dio a conocer el evento. Al día 12 de julio el derrame tenía una extensión de 400 km2. El hecho ocurrió en el campo petrolero de Pemex Ek Balam a 80 km de la ciudad del Carmen, campeche.
+                    Además del análisis de Tamburini, el Laboratorio Nacional de Observación de la Tierra (Lanot) junto con el Instituto de Geografía analizaron imágenes de radar para ubicar la mancha  y conocer el área. Los resultados arrojaron que el derrame alcanzó los 467 km2                    
+                </p>
+            </div>
+            <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido" >+</button>
+            </div>
+            <!--noticia2-->
+            <div class="rows-cols-md-6 col-12 col-sm-12 col-lg-4 noticias">
+                <h1>Después de tres años el volcán Shishaldin, en Alaska, entra en erupción</h1>
+            <div id="contenido2">
+                <!--ocultar/mostrar-->
+                <p>El volcán Shisaldin, ubicado en la isla unimak Alaska, entró en erupción a mediados de este mes. El 11 de julio, el Observatorio de Volcanes de Alaska reportó altas temperaturas y actividad sísmica. El viernes 14, a primeras horas del día ocurrió una explosión generando una nube de ceniza de nueve kilómetros. Por la tarde del 14 y al día siguiente ocurrieron dos explosiones más. En está ocasión la nube de ceniza fue de menor tamaño. 
+                </p>
+            </div>
+            <button onclick="muestra_oculta('contenido2')" class="btn btn-primary" form="contenido2" >+</button>
+            </div>
+            <!--noticia3-->
+            <div class="rows-cols-md-6 col-12 col-sm-12 col-lg-4 noticias">
+                <h1>Madé Lapuerta: la ingeniera que analiza tendencias de moda con un software</h1>
+            <div id="contenido3">
+                <!--ocultar/mostrar -->
+                <p>Cuando pensamos en el análisis de datos viene a nuestra mente gráficas y estadísticas de temas financieros o salud. Sin embargo, el análisis de datos es una herramienta que puede aplicarse a cualquier ámbito. Sí, a cualquiera. Y este hecho es bien sabido por la ingeniera en computación Madé Lapuerta.
+                </p>
+            </div>
+            <button onclick="muestra_oculta('contenido3')" class="btn btn-primary" form="contenido3">+</button>
+            </div>
+        </div>            
+    </div>
+    </div>
+<!--mapa y video de youtube-->
+    <div class="row justify-content-center">    
+            <div class="col-lg-6 col-md-6 col-sm-6 justify-content-center align-items-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.0826041534522!2d-99.15801717437688!3d19.448442634247968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8c4aba3ded7%3A0x631496daa73e28a!2sAlameda%20de%20Santa%20Mar%C3%ADa%20La%20Ribera%20y%20Kiosco%20Morisco!5e0!3m2!1ses-419!2smx!4v1691810260847!5m2!1ses-419!2smx" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 justify-content-center align-items-center">
+            <iframe width="300" height="350" src="https://www.youtube.com/embed/Ngls6lZ8_qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+    </div>
+
+<!-- instagram post-->
+    <div class="instagram" class="container-fluid">
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Cu3ZXNvsshI/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Cu3ZXNvsshI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Cu3ZXNvsshI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida por Xitle Noticias (@xitlenoticias)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+        </div>
+
+
+<!--tiktok-->    
+    <div class="tiktok" class="container-fluid">
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@xitlenoticias/video/7260320886790573317" data-video-id="7260320886790573317" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@xitlenoticias" href="https://www.tiktok.com/@xitlenoticias?refer=embed">@xitlenoticias</a> El 18 de julio 24 organizaciones denunciaron un derrame petrolero en el Golfo de México.  <a title="derramepetrolero" target="_blank" href="https://www.tiktok.com/tag/derramepetrolero?refer=embed">#derramepetrolero</a> <a title="periodismo" target="_blank" href="https://www.tiktok.com/tag/periodismo?refer=embed">#periodismo</a>  <a title="xitlenoticias" target="_blank" href="https://www.tiktok.com/tag/xitlenoticias?refer=embed">#xitlenoticias</a> <a target="_blank" title="♬ sonido original - XitleNoticias" href="https://www.tiktok.com/music/sonido-original-7260320901744921350?refer=embed">♬ sonido original - XitleNoticias</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+<!--pie-->
+    <footer>
+        <p>| ©2023 Xitle Noticias | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384- w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+</body>
+</html>
