@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
 body {
     min-height: 100%;
@@ -24,16 +25,18 @@ header {
         justify-content: center;
     }
     header ul li {
-        margin: 10px;
-        color: #286075;
+        margin: 20px;
+        color: #000000;
+        font-size: 30px;
         font-weight: bold;
         text-align: center;
+        font-family: 'Alegreya', serif;;
     }
     a {
         text-decoration: none !important;
     }
     .logo img {
-        width: 200px;
+        width: 300px;
     }
 
 img{
@@ -95,7 +98,8 @@ p{
 h2 {
     font-size: 30px;
     font-weight: bold;
-    color: #286075;
+    color: #000405;
+    font-family: 'Alegreya', serif;;
 }
 
 
@@ -114,7 +118,7 @@ h2 {
     }
 .noticias h1 {
     font-size: 21px;
-    color: rgb(16, 24, 92);
+    color: rgb(57, 26, 83);
     text-align: justify;
     }
 .noticias p {
@@ -122,7 +126,7 @@ h2 {
     text-align: justify;
     }
 button {
-    background-color: rgb(3, 79, 12);
+    background-color: rgb(199, 73, 15);
     color: white;
     padding: 5px;
     width: 100px;
@@ -133,7 +137,7 @@ footer {
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    background-color: rgb(218, 234, 247);
+    background-color: rgba(57, 26, 83, 0.575);
     height: 50px;
     }
 footer a {
@@ -151,3 +155,17 @@ footer a {
     border: solid 1px hsl(136, 97%, 30%);
     background-color: hsl(136, 97%, 20%);
     } 
+
+    .tiktok{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instagram{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
