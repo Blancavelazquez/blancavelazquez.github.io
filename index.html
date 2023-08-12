@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- llamo al archivo de CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- llamo al archivo CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
-    <!-- llamo al archivo de JavaScript -->
     <script defer src="./main.js"></script>
     <title>Mi primera pagina Web</title>
 </head>
@@ -27,23 +24,20 @@
                     <a href="https://junior.org.ar/alumni/"><li>ALUMNI</li></a>
                 </ul>
             </nav>
-            </div>
-
-<!---<a href="https://junior.org.ar/"><li>HOME</li></a>-->            
+            </div>          
 
     </header>
-
-
+<!--carrusel-->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="./c1.jpg" class="d-block w-100" alt="...">
+            <img src="c1.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="./c2.jpg" class="d-block w-100" alt="...">
+            <img src="c2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="./c3.jpg" class="d-block w-100" alt="...">
+            <img src="c3.jpg" class="d-block w-100" alt="...">
         </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -56,17 +50,15 @@
         </button>
     </div>    
 
-
     <div class="container-fluid bg-info"></div>
-
+<!--quienes Somos-->
     <div class="presentacion" class="container-fluid">
         <h1>QUIÉNES SOMOS</h1>
         <p>Somos una de las ONG más grandes del mundo.  A través del aprendizaje activo en educación financiera, preparación para el trabajo y emprendimiento, preparamos a los jóvenes para que sean protagonistas de su futuro.</p>
     </div>
-
+<!--info+imagenes con borde circular-->
     <div class="cajas">
     <div class="row justify-content-center">
-
         <div class="caja col-md-4 p-4 d-flex flex-column justify-content-center align-items-center"> 
             <img src="desafio.jpg" alt="Desafio de Junior">
             <h1>EL DESAFÍO</h1>
@@ -85,9 +77,7 @@
         </div>   
     </div>
     </div>
-
-
-
+<!--más info-->
     <div class="container-fluid">
     <div class="row" class="caja">
                 <div class="col-6 bg-primary">
@@ -101,56 +91,45 @@
                 </div>
     </div>
     </div>
-
-
-<!-- contenedor general para poner todas las noticias -->
+<!--noticias -->
     <div class="container-fluid">
     <div class="noticias">
         <div class="row">
-            <!-- primera noticia col-12 col-sm-12 row-cols-md-6 col-lg-4-->
+            <!--noticia1-->
             <div class="rows-cols-md-6 col-12 col-sm-12 col-lg-4 noticias">
                 <h1>3.700 jóvenes aprendieron a programar.</h1>
             <div id="contenido" >
-            <!-- este contenedor es el que quiero ocultar/mostrar -->
+            <!--ocultar/mostrar -->
                 <p> En su cuarto año consecutivo, Yo puedo programar reunió 3.700 estudiantes de 86 escuelas de todo el país. La
                 creatividad y la autonomía digital. Unavez más se cunplió el alcanzó el objetivo propuesto todos los años.
                 </p>
             </div>
             <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido" >+</button>
             </div>
-        
-
-            <!-- segunda noticia -->
+            <!--noticia2-->
             <div class="rows-cols-md-6 col-12 col-sm-12 col-lg-4 noticias">
                 <h1>Más de 120 docentes se capacitaron en el programa Yo Puedo Porgramar. </h1>
             <div id="contenido2">
-                <!-- este contenedor es el que quiero ocultar/mostrar -->
+                <!--ocultar/mostrar-->
                 <p>“La oportunidad es enorme: desde cualquier lugar y con cualquier dispositivo podemos acceder a una vasta
                 de Microsoft Américas. </p>
             </div>
             <button onclick="muestra_oculta('contenido2')" class="btn btn-primary" form="contenido2" >+</button>
             </div>
-
-            <!-- tercera noticia -->
+            <!--noticia3-->
             <div class="rows-cols-md-6 col-12 col-sm-12 col-lg-4 noticias">
                 <h1>Estudiantes entre 14 y 18 años de todo el país participaron del proyecto educativo. </h1>
             <div id="contenido3">
-                <!-- este contenedor es el que quiero ocultar/mostrar -->
+                <!--ocultar/mostrar -->
                 <p>El programa se dictó en el Campus de JA y tenía una duración estimada de 4 semanas. Los chicos contaron con
                 ágil, dinámica y entretenida, y así desarrollan habilidades que les sirven para su futuro.</p>
             </div>
             <button onclick="muestra_oculta('contenido3')" class="btn btn-primary" form="contenido3">+</button>
             </div>
-
         </div>            
     </div>
     </div>
-
-
-
-
-
-
+<!--mapay video de youtube-->
     <div class="row justify-content-center">    
             <div class="col-lg-6 col-md-6 col-sm-6 justify-content-center align-items-center">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4780.44771905325!2d-58.470841709503986!3d-34.60272658477628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33533433603c1%3A0x45810ad3a92f29c7!2sJunior%20Achievement%20Argentina!5e0!3m2!1ses-419!2ses!4v1679771464712!5m2!1ses-419!2ses" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -160,16 +139,12 @@
             </div>
     </div>
 
-
-
-
-
-
-
+        <a href="AJXitle/index.html"><p>Link a la página del proyecto personal</p></a>
+    
+<!--pie-->
     <footer>
         <p>Política de privacidad | ©2023 Junior Achievement. Todos los derechos reservados.</p>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384- w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 </body>
